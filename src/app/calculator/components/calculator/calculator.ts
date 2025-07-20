@@ -1,7 +1,7 @@
 import {Component, computed, inject, Signal, viewChildren} from '@angular/core';
 import {CalculatorButton} from '../calculator-button/calculator-button';
 import {DecimalPipe} from '@angular/common';
-import {CalculatorService} from '../../services/calculator';
+import {CalculatorService} from '../../services/calculator.service';
 
 @Component({
   selector: 'calculator',

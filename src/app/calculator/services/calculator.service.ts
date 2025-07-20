@@ -57,6 +57,7 @@ export class CalculatorService {
     //limitar caracteres
     if (this.resultText().length >= 10) {
       console.log('Max length reached')
+      return;
     }
 
     //validar decimal

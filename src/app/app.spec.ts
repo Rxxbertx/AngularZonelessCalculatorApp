@@ -28,8 +28,10 @@ describe('App', () => {
 
   it('should render',()=>{
     const divElement = compiled.querySelector('div');
-    const cssClasses = 'min-h-screen'
-      expect(divElement?.classList).toContain(cssClasses);
+    const cssClasses = 'min-w-screen min-h-screen bg-slate-600 flex items-center justify-center px-5 py-5'.split(" ")
+    const divCssClasses = divElement?.classList.value.split(" ")
+    expect(divElement).not.toBeNull();
+    cssClasses.forEach((cls) => expect(divCssClasses).toContain(cls));
   })
 
 });

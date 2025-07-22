@@ -15,7 +15,7 @@ export class CalculatorButton {
 
   public onClick = output<string>()
 
-  isPressed = signal<any | null>(null);
+  isPressed = signal<any | null>(false);
 
   public contentValue = viewChild<ElementRef<HTMLButtonElement>>('button');
 
